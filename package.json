@@ -1,0 +1,35 @@
+{
+  "name": "@yiero/gm-menu-controller",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/tampermonkey": "^5.0.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/bundle.umd.cjs",
+  "module": "./dist/bundle.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bundle.js",
+      "require": "./dist/bundle.umd.cjs"
+    }
+  },
+  "types": "types/index.d.ts",
+  "keywords": [
+    "utils",
+    "tampermonkey",
+    "scriptcat"
+  ],
+  "license": "LGPL-3.0-or-later",
+  "homepage": "https://github.com/AliubYiero/TamperMonkeyUtils"
+}
