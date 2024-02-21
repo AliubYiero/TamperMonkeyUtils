@@ -1,6 +1,6 @@
 # GM Menu Controller
 
-> [[English]](#GM Menu Controller) | [[中文]](#GM Menu Controller - 油猴菜单控制器)
+> [[English](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-controller)] | [[中文](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-controller---%E6%B2%B9%E7%8C%B4%E8%8F%9C%E5%8D%95%E6%8E%A7%E5%88%B6%E5%99%A8)]
 
 > **My English is not well. For that, I ask for your understanding.**
 
@@ -20,7 +20,7 @@ import {GMMenuController} from '@yiero/gm-menu-controller';
 const menuController = GMMenuController.getInstance();
 ```
 
-> **change GM Menu Controller options** (see [details](###GM Menu Controller options))
+> **change GM Menu Controller options** (see [details](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-controller-options))
 
 ```js
 // default options without changing
@@ -42,7 +42,7 @@ const menuList = menuController.getProxy();
 
 > when you receive `menuList`, you can use `menuList` like an array. 
 >
-> every array item is a object contain `title`, `onClick`, `isShow*`, `accessKey*` properties (* means optional prama), 
+> every array item is a object contain `title`, `onClick`, `isShow*`, `accessKey*` properties (* means optional prama), (see [details](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-menu-list-item-property))
 >
 > Every time the data in `menuList` is changed, the display is updated in real time. 
 
@@ -112,7 +112,7 @@ menuList[0].isShow = false;
 
 # GM Menu Controller - 油猴菜单控制器
 
-> [[English]](#GM Menu Controller) | [[中文]](#GM Menu Controller - 油猴菜单控制器)
+> [[English](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-controller)] | [[中文](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController#gm-menu-controller---%E6%B2%B9%E7%8C%B4%E8%8F%9C%E5%8D%95%E6%8E%A7%E5%88%B6%E5%99%A8)]
 
 ## 安装
 ```plain
@@ -132,7 +132,7 @@ import {GMMenuController} from '@yiero/gm-menu-controller';
 const menuController = GMMenuController.getInstance();
 ```
 
-> **改变 GM Menu Controller 配置** (查看 [配置详情 ](###GM Menu Controller options))
+> **改变 GM Menu Controller 配置** (查看 [配置详情](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController?tab=readme-ov-file#gm-menu-controller-%E9%85%8D%E7%BD%AE))
 
 ```js
 // 默认配置
@@ -153,7 +153,7 @@ const menuList = menuController.getProxy();
 
 > 您可以向一个正常数组 (Array) 一样使用接收到的 `menuList` 数组, 
 >
-> 每一个 `menuList` 项都是一个包含 `title`, `onClick`, `isShow*`, `accessKey*` 属性的对象 (*表示可选参数),
+> 每一个 `menuList` 项都是一个包含 `title`, `onClick`, `isShow*`, `accessKey*` 属性的对象 (*表示可选参数), (查看 [配置详情](https://github.com/AliubYiero/TamperMonkeyUtils/tree/GMMenuController?tab=readme-ov-file#gm-menu-menu-list-%E6%95%B0%E7%BB%84%E9%A1%B9%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7))
 >
 > 每一次更改 `menuList` 中的数据, 都会实时更新显示. 
 
