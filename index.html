@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	
+	<style>
+		.test {
+			background-color: pink;
+			height: 20px;
+			margin: 20px;
+		}
+	</style>
 </head>
 <body>
+<div id="app"></div>
+<script src="/dist/index.js">
+</script>
 
+<script>
+	const appDom = document.querySelector( '#app' );
+	const timer = setInterval( () => {
+		const element = document.createElement( 'div' );
+		element.classList.add( 'test' );
+		appDom.appendChild( element );
+	}, 500 );
+	setTimeout( () => {
+		clearInterval( timer );
+	}, 10 * 1000 );
+</script>
 </body>
 </html>

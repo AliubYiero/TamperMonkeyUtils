@@ -1,17 +1,23 @@
 {
-  "name": "@yiero/template",
+  "name": "@yiero/element-waiter",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.0a",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --config ./vite.config.ts",
+    "coverage": "vitest run --coverage",
+    "publish": "nrm use npm & npm publish & nrm use taobao"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.11.19",
     "@types/tampermonkey": "^5.0.2",
     "typescript": "^5.2.2",
-    "vite": "^5.1.0"
+    "vite": "^5.1.0",
+    "vitest": "^1.3.1"
   },
   "files": [
     "dist"
@@ -20,7 +26,7 @@
   "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.min.js",
       "require": "./dist/index.umd.cjs"
     }
   },
