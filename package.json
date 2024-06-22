@@ -1,0 +1,38 @@
+{
+	"name": "@yiero/<Name>",
+	"private": false,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"serve": "vite",
+		"dev": "vite build --mode development && tsc",
+		"build": "vite build --mode production && tsc",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@rollup/plugin-terser": "^0.4.4",
+		"@types/node": "^20.11.25",
+		"@types/tampermonkey": "^5.0.2",
+		"typescript": "^5.2.2",
+		"vite": "^5.1.0"
+	},
+	"files": [
+		"dist",
+		"lib"
+	],
+	"main": "./lib/index.umd.cjs",
+	"module": "./lib/index.js",
+	"exports": {
+		".": {
+			"import": "./lib/index.js"
+		}
+	},
+	"types": "lib/index.d.ts",
+	"keywords": [
+		"utils",
+		"tampermonkey",
+		"scriptcat"
+	],
+	"license": "LGPL-3.0-or-later",
+	"homepage": "https://github.com/AliubYiero/TamperMonkeyUtils"
+}
